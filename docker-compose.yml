@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+    meeting_room_occupancy_api:
+        build: ./meeting_room_occupancy_api
+        ports: 
+            - 5000:5000
+
+    meeting_room_occupancy:
+        build: ./meeting_room_occupancy_app
+        ports: 
+            - 8080:8080
+
